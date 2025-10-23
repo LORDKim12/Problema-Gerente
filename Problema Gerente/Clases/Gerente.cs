@@ -8,11 +8,11 @@ namespace Problema_Gerente.Clases
 {
     internal class Gerente:Empleado
     {
-        public double bono;
+        public decimal bono;
 
         public override string MostrarDatos()
         {
-            return MostrarDatos() + $"\nBono: {bono}";
+            return base.MostrarDatos() + $"\nBono: {bono}";
         }
     }
 }

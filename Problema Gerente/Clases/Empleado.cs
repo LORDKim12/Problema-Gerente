@@ -9,7 +9,7 @@ namespace Problema_Gerente.Clases
     internal class Empleado
     {
         public string? nombre;
-        public double salario;
+        public decimal salario;
 
         public virtual string MostrarDatos()
         {

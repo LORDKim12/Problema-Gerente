@@ -14,14 +14,19 @@ namespace Problema_Gerente
         private void button1_Click(object sender, EventArgs e)
         {
             
-            gerente.nombre("Juan Perez");
+            gerente.nombre = "Juan Perez";
             gerente.salario = 50000;
             gerente.bono = 10000;
+
+            empleado.nombre = "Ana Gomez";
+            empleado.salario = 30000;
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show(gerente.MostrarDatos());
+            MessageBox.Show(empleado.MostrarDatos());
         }
     }
 }
